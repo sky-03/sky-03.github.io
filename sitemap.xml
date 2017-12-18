@@ -3,7 +3,17 @@
 
     <sitemap>
         <loc>http://www.kalisec.cn/post-sitemap.xml</loc>
-        <lastmod>2017-12-01T08:52:43.250Z</lastmod>
+        <lastmod>2017-12-18T08:26:19.342Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://www.kalisec.cn/page-sitemap.xml</loc>
+        <lastmod>2017-12-18T08:41:53.736Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://www.kalisec.cn/tag-sitemap.xml</loc>
+        <lastmod>2017-12-18T08:26:19.342Z</lastmod>
     </sitemap>
 
 </sitemapindex>
