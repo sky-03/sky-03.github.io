@@ -8,14 +8,35 @@
     
     <url>
         <loc>http://www.kalisec.cn/about/</loc>
-        <lastmod>2017-12-18T08:41:53.736Z</lastmod>
+        <lastmod>2017-12-18T10:02:55.780Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>http://www.kalisec.cn/404.html</loc>
-        <lastmod>2017-12-18T07:58:39.284Z</lastmod>
+        <loc>http://www.kalisec.cn/categories/BInary/</loc>
+        <lastmod>2017-12-18T09:20:32.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.kalisec.cn/categories/CTF/</loc>
+        <lastmod>2017-12-18T09:16:49.144Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.kalisec.cn/categories/Other/</loc>
+        <lastmod>2017-12-18T09:15:50.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.kalisec.cn/tags/</loc>
+        <lastmod>2017-12-18T09:07:05.148Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
