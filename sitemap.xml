@@ -3,7 +3,7 @@
 
     <sitemap>
         <loc>http://www.kalisec.cn/post-sitemap.xml</loc>
-        <lastmod>2017-12-01T08:52:43.250Z</lastmod>
+        <lastmod>2017-12-18T09:34:42.751Z</lastmod>
     </sitemap>
 
     <sitemap>
@@ -13,12 +13,12 @@
 
     <sitemap>
         <loc>http://www.kalisec.cn/category-sitemap.xml</loc>
-        
+        <lastmod>2017-12-18T09:34:42.751Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://www.kalisec.cn/tag-sitemap.xml</loc>
-        
+        <lastmod>2017-12-18T09:34:42.751Z</lastmod>
     </sitemap>
 
 </sitemapindex>
