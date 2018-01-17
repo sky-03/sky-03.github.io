@@ -3,6 +3,26 @@
 
 
     
+  <url>
+    <loc>http://www.kalisec.cn/2017/09/30/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E5%89%8D%E5%A5%8F/</loc>
+    <lastmod>2018-01-17T01:14:22.139Z</lastmod>
+    <data>
+        <display>
+        <title>网络爬虫前奏笔记</title>
+        <pubTime>2017-09-30T00:37:27.000Z</pubTime>
+        
+        <tag>other</tag>
+         
+         
+           
+             
+              <breadCrumb title="other" url="http://www.kalisec.cn/categories/other/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.kalisec.cn/2017/09/30/CTFinfo/</loc>
@@ -29,19 +49,4 @@
     
     
     
-    
-  <url>
-    <loc>http://www.kalisec.cn/2017/12/01/hello-world/</loc>
-    <lastmod>2017-12-01T08:52:43.250Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-12-01T08:52:43.249Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>
