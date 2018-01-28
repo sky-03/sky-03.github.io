@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/taiji.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/taiji.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/taiji.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+  <link rel="manifest" href="/images/manifest.json">
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+
+
+
+  <meta name="keywords" content="Other,PWBIn," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="未写完，待更新.">
+<meta name="keywords" content="Other,PWBIn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《python开发与项目实战》学习笔记">
+<meta property="og:url" content="http://www.kalisec.cn/2018/01/28/python爬虫开发与项目实战读书笔记/index.html">
+<meta property="og:site_name" content="PWBIn">
+<meta property="og:description" content="未写完，待更新.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://image.3001.net/images/20180128/15171233214244.jpeg">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158239566959.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158250138630.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158251202441.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158272651419.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158279168617.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158290269562.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158290976726.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158292993281.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158293771608.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158298486641.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158299009440.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/1515830036132.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158358768689.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158359736714.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/1515836160363.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158362291774.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158365729245.png">
+<meta property="og:image" content="http://image.3001.net/images/20180113/15158367421232.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158932609657.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158937759140.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158946766611.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158954276133.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158957793056.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158958784454.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158959419093.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158961517749.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158962609348.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158965335815.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158967585523.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158971059265.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158973979045.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158976032000.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158978296895.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158989479163.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158990503140.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158991183225.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158992222109.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158993219168.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158995251918.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158995846233.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158996746519.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15158998979308.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15159092229784.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15159097114091.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15159221317662.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15159222677900.png">
+<meta property="og:image" content="http://image.3001.net/images/20180114/15159232673718.png">
+<meta property="og:image" content="http://image.3001.net/images/20180115/15159873437058.png">
+<meta property="og:image" content="http://image.3001.net/images/20180115/15159875246801.png">
+<meta property="og:updated_time" content="2018-01-28T07:29:12.344Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《python开发与项目实战》学习笔记">
+<meta name="twitter:description" content="未写完，待更新.">
+<meta name="twitter:image" content="http://image.3001.net/images/20180128/15171233214244.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.kalisec.cn/2018/01/28/python爬虫开发与项目实战读书笔记/"/>
+
+
+
+
+
+  <title>《python开发与项目实战》学习笔记 | PWBIn</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PWBIn</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">你好，世界</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-ctf">
+          <a href="/categories/CTF" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            CTF
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-binary">
+          <a href="/categories/BInary" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            BInary
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-other">
+          <a href="/categories/Other" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Other
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.kalisec.cn/2018/01/28/python爬虫开发与项目实战读书笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PWBIn">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/PWN.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PWBIn">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《python开发与项目实战》学习笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-28T15:29:27+08:00">
+                2018-01-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Other/" itemprop="url" rel="index">
+                    <span itemprop="name">Other</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o">浏览数</i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://image.3001.net/images/20180128/15171233214244.jpeg" alt=""><br>未写完，待更新.<br><a id="more"></a></p>
+<h1 id="python爬虫开发与项目实站"><a href="#python爬虫开发与项目实站" class="headerlink" title="python爬虫开发与项目实站"></a>python爬虫开发与项目实站</h1><h2 id="回顾python编程"><a href="#回顾python编程" class="headerlink" title="回顾python编程"></a>回顾python编程</h2><h3 id="IO编程"><a href="#IO编程" class="headerlink" title="IO编程"></a>IO编程</h3><h4 id="文件读写"><a href="#文件读写" class="headerlink" title="文件读写"></a>文件读写</h4><p>open函数的mode参数<br>|值|功能描述|<br>|–|——–<br>|’r’|读模式<br>|’w’|写模式<br>|’a’|追加模式<br>|’b’|二进制模式(可添加到其他模式使用)<br>|’+’|读写模式(可添加到其他模式使用)</p>
+<h4 id="操作文件和目录"><a href="#操作文件和目录" class="headerlink" title="操作文件和目录"></a>操作文件和目录</h4><p>python中对文件和目录的操作经常用到os模块和shutil模块<br>shutil模块可以复制文件夹、复制文件、移动文件、删除目录<br>其他的对操作文件和目录的操作用的是os模块</p>
+<h4 id="序列化操作"><a href="#序列化操作" class="headerlink" title="序列化操作"></a>序列化操作</h4><p><code>序列化</code>：把内存中的变量变成可存储或可传输的过程<br>在python中提供两个模块：cPickle和pickle来实现序列化，前者是由C语言编写的，效率比后者高很多，但是两个模块的功能是一样的。<br>现在流行的是序列化为JSON格式<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">import</span> cPickle <span class="keyword">as</span> pickle</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    <span class="keyword">import</span> pickle</span><br></pre></td></tr></table></figure></p>
+<h3 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h3><h4 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h4><p>python实现多进程的主要方式有两种，一种方法是使用os模块中的fork方法，另一种是方法是使用multiprocessing模块<br>1.使用os模块中的fork方式实现多进程<br>fork方法调用一次，返回两次，原因在于操作系统将当前进程(父进程)复制出一份进程(子进程)。子进程中永远返回0，父进程中返回的是子进程的ID<br>其中os模块的getpid方法用于获取当前进程的ID,getppid方法用于获取父进程的ID。<br>2.使用multiprocessing模块创建进程<br><img src="http://image.3001.net/images/20180113/15158239566959.png" alt=""><br>以上两种方法只适用于创建少量的子进程，要启动大量的子进程，可以用进程池Pool<br>3.multiprocessing模块提供一个Pool类来代表进程池对象<br><img src="http://image.3001.net/images/20180113/15158250138630.png" alt=""><br><img src="http://image.3001.net/images/20180113/15158251202441.png" alt=""><br>Pool对象调用join()方法会等待所有子进程执行完毕，调用jion()之前必须先调用close()，调用close()之后就不能继续添加新的Process了<br>4.进程通信<br>python提供了多种进程间通信的方式，列入：Queue、Pipe、Value+Array等。主要讲解Queue和Pipe这两种方式。这两个区别在于：<code>Pipe常用于两个进程间通信，Queue用来在多个进程间实现通信。</code><br>Queue通信方式。Queue是多进程安全的队列，可以使用Queue实现多进程之间的数据传递。<br>有两个方法：<code>Put</code>和<code>Get</code>可以进行Queue操作：<br><img src="http://image.3001.net/images/20180113/15158272651419.png" alt=""><br>Pipe通信机制，Pipe常用来在两个进程进行通信，两个进程分别位于管道的两端。<br><img src="http://image.3001.net/images/20180113/15158279168617.png" alt=""></p>
+<h4 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h4><p>多线程类似于同时执行多个不同程序，多线程运行有如下的优点：<br>1<code>.</code>可以把运行时间长的任务放到后台能去处理。<br>2<code>.</code>程序运行速度更快<br>3<code>.</code>用户界面可以更加吸引人<br>python提供了两个模块：thread和threading,thread是低级模块，threading是高级模块。</p>
+<h5 id="用threading模块创建多线程"><a href="#用threading模块创建多线程" class="headerlink" title="用threading模块创建多线程"></a>用threading模块创建多线程</h5><p>第一种方式是把一个函数传入并创建Thread实例，然后调用start方法开始执行。<br><img src="http://image.3001.net/images/20180113/15158290269562.png" alt=""><br><img src="http://image.3001.net/images/20180113/15158290976726.png" alt=""><br>第二种欧冠方式从threading.Thread继承创建线程类。<br><img src="http://image.3001.net/images/20180113/15158292993281.png" alt=""><br><img src="http://image.3001.net/images/20180113/15158293771608.png" alt=""></p>
+<h5 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h5><p>使用Thread对象的Lock和RLock可以实现简单的线程同步，这两个对象都有acquire和release方法<br>RLock对象允许一个线程多次对其进行acquire操作，因为其内部通过一个counter变量维护着线程acquire的次数，而且每一次的acquire操作必须有一个release操作与之对象，在所有的release操作完成之后，别的线程才能申请RLock队象。<br><img src="http://image.3001.net/images/20180113/15158298486641.png" alt=""><br><img src="http://image.3001.net/images/20180113/15158299009440.png" alt=""></p>
+<h5 id="全局解释器锁-GIL"><a href="#全局解释器锁-GIL" class="headerlink" title="全局解释器锁(GIL)"></a>全局解释器锁(GIL)</h5><p><img src="http://image.3001.net/images/20180113/1515830036132.png" alt=""></p>
+<h4 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h4><h4 id="分布式进程"><a href="#分布式进程" class="headerlink" title="分布式进程"></a>分布式进程</h4><h3 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h3><p>1<code>.</code>socket类型<br>2<code>.</code>Socket函数</p>
+<h4 id="TCP编程"><a href="#TCP编程" class="headerlink" title="TCP编程"></a>TCP编程</h4><h4 id="UDP编程"><a href="#UDP编程" class="headerlink" title="UDP编程"></a>UDP编程</h4><h2 id="WEB前端基础"><a href="#WEB前端基础" class="headerlink" title="WEB前端基础"></a>WEB前端基础</h2><h2 id="初识网络爬虫"><a href="#初识网络爬虫" class="headerlink" title="初识网络爬虫"></a>初识网络爬虫</h2><h3 id="爬虫概述"><a href="#爬虫概述" class="headerlink" title="爬虫概述"></a>爬虫概述</h3><p>略</p>
+<h3 id="HTTP请求的python实现"><a href="#HTTP请求的python实现" class="headerlink" title="HTTP请求的python实现"></a>HTTP请求的python实现</h3><h4 id="urllib2-urllib-实现"><a href="#urllib2-urllib-实现" class="headerlink" title="urllib2/urllib 实现"></a>urllib2/urllib 实现</h4><h4 id="httplib-urllib-实现"><a href="#httplib-urllib-实现" class="headerlink" title="httplib/urllib 实现"></a>httplib/urllib 实现</h4><h4 id="更人性化的requests"><a href="#更人性化的requests" class="headerlink" title="更人性化的requests"></a>更人性化的requests</h4><h5 id="一个完整的请求与响应模板"><a href="#一个完整的请求与响应模板" class="headerlink" title="一个完整的请求与响应模板"></a>一个完整的请求与响应模板</h5><p>以<code>Get</code>方式<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">r = reqests.get(<span class="string">'http://www.baidu.com'</span>)</span><br><span class="line"><span class="keyword">print</span> r.content</span><br></pre></td></tr></table></figure></p>
+<p><code>r.content</code>返回的是字节形式<br>以<code>post</code>方式<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">postdata = &#123;<span class="string">'key'</span>:<span class="string">'value'</span>&#125;</span><br><span class="line">r = requests.post(<span class="string">'http://www.xxxx.com/login'</span>,data = postdata)</span><br><span class="line"><span class="keyword">print</span> r.content</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">    payload = &#123;<span class="string">'Keywords'</span>:<span class="string">'blog:qiyeboy'</span>,<span class="string">'pageindex'</span>:<span class="number">1</span>&#125;</span><br><span class="line">r = requests.get(<span class="string">'http://zzk,cnblogs.com/s/blogpost'</span>, params = payload)</span><br><span class="line"><span class="keyword">print</span> r.url</span><br></pre></td></tr></table></figure>
+<h5 id="响应与编码"><a href="#响应与编码" class="headerlink" title="响应与编码"></a>响应与编码</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">r = requests.get(<span class="string">'http://www.baidu.com'</span>)</span><br><span class="line"><span class="keyword">print</span> r.content</span><br><span class="line"><span class="keyword">print</span> r.encoding</span><br><span class="line">r.encoding = <span class="string">'utf-8'</span></span><br><span class="line"><span class="keyword">print</span> r.text</span><br></pre></td></tr></table></figure>
+<p>编码：chardet<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">r = requests.get(<span class="string">'http://www.baidu.com'</span>)</span><br><span class="line"><span class="keyword">print</span> chartdet.detect(r.content)</span><br><span class="line">r.encoding = chardet.detect(r.content)[<span class="string">'encoding'</span>]</span><br><span class="line"><span class="keyword">print</span> r.text</span><br></pre></td></tr></table></figure></p>
+<h5 id="请求头的处理"><a href="#请求头的处理" class="headerlink" title="请求头的处理"></a>请求头的处理</h5><p><img src="http://image.3001.net/images/20180113/15158358768689.png" alt=""></p>
+<h5 id="响应码code和响应头headers处理"><a href="#响应码code和响应头headers处理" class="headerlink" title="响应码code和响应头headers处理"></a>响应码code和响应头headers处理</h5><p><img src="http://image.3001.net/images/20180113/15158359736714.png" alt=""></p>
+<h5 id="Cookie-处理"><a href="#Cookie-处理" class="headerlink" title="Cookie 处理"></a>Cookie 处理</h5><p><img src="http://image.3001.net/images/20180113/1515836160363.png" alt=""><br><img src="http://image.3001.net/images/20180113/15158362291774.png" alt=""></p>
+<h5 id="重定向与历史消息"><a href="#重定向与历史消息" class="headerlink" title="重定向与历史消息"></a>重定向与历史消息</h5><p><img src="http://image.3001.net/images/20180113/15158365729245.png" alt=""></p>
+<h5 id="超时设置"><a href="#超时设置" class="headerlink" title="超时设置"></a>超时设置</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">requests.get(<span class="string">'http://github.com'</span>,timeout = <span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+<h5 id="代理设置"><a href="#代理设置" class="headerlink" title="代理设置"></a>代理设置</h5><p><img src="http://image.3001.net/images/20180113/15158367421232.png" alt=""></p>
+<h2 id="HTML解析大法"><a href="#HTML解析大法" class="headerlink" title="HTML解析大法"></a>HTML解析大法</h2><h3 id="初识Firebug"><a href="#初识Firebug" class="headerlink" title="初识Firebug"></a>初识Firebug</h3><h3 id="RE正则"><a href="#RE正则" class="headerlink" title="RE正则"></a>RE正则</h3><h4 id="基本语法的使用"><a href="#基本语法的使用" class="headerlink" title="基本语法的使用"></a>基本语法的使用</h4><h5 id="入门小例子"><a href="#入门小例子" class="headerlink" title="入门小例子"></a>入门小例子</h5><h5 id="常用元字符"><a href="#常用元字符" class="headerlink" title="常用元字符"></a>常用元字符</h5><p><img src="http://image.3001.net/images/20180114/15158932609657.png" alt=""></p>
+<h5 id="字符转义"><a href="#字符转义" class="headerlink" title="字符转义"></a>字符转义</h5><p>如果你想查找元字符本身的话，因为它们具有特定功能，没办法把它们指定为普通字符。这个时候就需要用到转义，使用“\”来取消这些字符的特殊意义。</p>
+<h5 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h5><p><img src="http://image.3001.net/images/20180114/15158937759140.png" alt=""></p>
+<h5 id="字符集合"><a href="#字符集合" class="headerlink" title="字符集合"></a>字符集合</h5><p>正则表达式是通过[]来实现自定义字符集合，[abcd]就是匹配abcd中的任意一个字符，[.,!]匹配标点符号</p>
+<h5 id="分支条件"><a href="#分支条件" class="headerlink" title="分支条件"></a>分支条件</h5><p>如果满足其中任意一种规则都应该当成匹配，具体方法是用“|”把不同的规则分隔开。</p>
+<h5 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h5><p>IP地址的匹配：<code>((25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d){3}(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d))</code></p>
+<h5 id="反义"><a href="#反义" class="headerlink" title="反义"></a>反义</h5><p><img src="http://image.3001.net/images/20180114/15158946766611.png" alt=""></p>
+<h5 id="后向引向"><a href="#后向引向" class="headerlink" title="后向引向"></a>后向引向</h5><p><img src="http://image.3001.net/images/20180114/15158954276133.png" alt=""></p>
+<h5 id="零宽断言"><a href="#零宽断言" class="headerlink" title="零宽断言"></a>零宽断言</h5><p>零宽断言共有四种形式:前两种形式是正向零宽断言，后两种是负向零宽断言<br>正向零宽断言的两种形式：<br><img src="http://image.3001.net/images/20180114/15158957793056.png" alt=""><br><img src="http://image.3001.net/images/20180114/15158958784454.png" alt=""><br>负向零宽断言的两种形式：<br><img src="http://image.3001.net/images/20180114/15158959419093.png" alt=""></p>
+<h5 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h5><p><img src="http://image.3001.net/images/20180114/15158961517749.png" alt=""></p>
+<h5 id="贪婪与懒惰"><a href="#贪婪与懒惰" class="headerlink" title="贪婪与懒惰"></a>贪婪与懒惰</h5><p><img src="http://image.3001.net/images/20180114/15158962609348.png" alt=""></p>
+<h5 id="处理选项"><a href="#处理选项" class="headerlink" title="处理选项"></a>处理选项</h5><p><img src="http://image.3001.net/images/20180114/15158965335815.png" alt=""></p>
+<h4 id="python与正则"><a href="#python与正则" class="headerlink" title="python与正则"></a>python与正则</h4><p><img src="http://image.3001.net/images/20180114/15158967585523.png" alt=""><br>python通过re模块提供对正则表达式的支持。使用re的一般步骤是：<br>1<code>.</code>先将正则表达的字符串形式编译为Pattern实例<br>2<code>.</code>然后使用Pattern实例处理文本并获得匹配结果<br>3<code>.</code>最后使用Match实例获得信息，进行其他操作<br>主要方法：<br><img src="http://image.3001.net/images/20180114/15158971059265.png" alt=""><br>参数flag是匹配模式，取值可以使用按位或运算符”|”表示同时生效。<br>flag的可选值如下：<br><img src="http://image.3001.net/images/20180114/15158973979045.png" alt=""></p>
+<h5 id="re-match-pattern-string-flags"><a href="#re-match-pattern-string-flags" class="headerlink" title="re.match(pattern,string[,flags])"></a>re.match(pattern,string[,flags])</h5><p><img src="http://image.3001.net/images/20180114/15158976032000.png" alt=""><br>总结：re.match()方法从开头开始匹配，若开头没有匹配成功，则返回none，反之获取匹配的结果</p>
+<h5 id="re-search-pattern-string-flags"><a href="#re-search-pattern-string-flags" class="headerlink" title="re.search(pattern,string[,flags])"></a>re.search(pattern,string[,flags])</h5><p><img src="http://image.3001.net/images/20180114/15158978296895.png" alt=""><br>总结：search()会扫描整个string查找匹配</p>
+<h5 id="re-split-pattern-string-maxsplit"><a href="#re-split-pattern-string-maxsplit" class="headerlink" title="re.split(pattern,string[,maxsplit])"></a>re.split(pattern,string[,maxsplit])</h5><p><img src="http://image.3001.net/images/20180114/15158989479163.png" alt=""></p>
+<h5 id="re-findall-pattern-string-flags"><a href="#re-findall-pattern-string-flags" class="headerlink" title="re.findall(pattern,string[,flags])"></a>re.findall(pattern,string[,flags])</h5><p><img src="http://image.3001.net/images/20180114/15158990503140.png" alt=""></p>
+<h5 id="re-finditer-pattern-string-flags"><a href="#re-finditer-pattern-string-flags" class="headerlink" title="re.finditer(pattern,string[,flags])"></a>re.finditer(pattern,string[,flags])</h5><p><img src="http://image.3001.net/images/20180114/15158991183225.png" alt=""></p>
+<h5 id="re-sub-pattern-repl-string-count"><a href="#re-sub-pattern-repl-string-count" class="headerlink" title="re.sub(pattern,repl,string[,count])"></a>re.sub(pattern,repl,string[,count])</h5><p><img src="http://image.3001.net/images/20180114/15158992222109.png" alt=""></p>
+<h5 id="re-subn-pattern-repl-string-count"><a href="#re-subn-pattern-repl-string-count" class="headerlink" title="re.subn(pattern,repl,string[,count])"></a>re.subn(pattern,repl,string[,count])</h5><p><img src="http://image.3001.net/images/20180114/15158993219168.png" alt=""><br><code>Match对象的属性和方法</code><br><img src="http://image.3001.net/images/20180114/15158995251918.png" alt=""><br><img src="http://image.3001.net/images/20180114/15158995846233.png" alt=""><br><code>函数调用的方式</code><br><img src="http://image.3001.net/images/20180114/15158996746519.png" alt=""></p>
+<h3 id="强大的Beautiful-Soup"><a href="#强大的Beautiful-Soup" class="headerlink" title="强大的Beautiful Soup"></a>强大的Beautiful Soup</h3><h4 id="解析器比较"><a href="#解析器比较" class="headerlink" title="解析器比较"></a>解析器比较</h4><p><img src="http://image.3001.net/images/20180114/15158998979308.png" alt=""></p>
+<h4 id="Beautiful-Soup的使用"><a href="#Beautiful-Soup的使用" class="headerlink" title="Beautiful Soup的使用"></a>Beautiful Soup的使用</h4><h5 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h5><p><img src="http://image.3001.net/images/20180114/15159092229784.png" alt=""><br><img src="http://image.3001.net/images/20180114/15159097114091.png" alt=""></p>
+<h5 id="对象种类"><a href="#对象种类" class="headerlink" title="对象种类"></a>对象种类</h5><p>共有4种对象：<br>1<code>.</code>Tag<br>2<code>.</code>NavigableString<br>3<code>.</code>BeautifulSoup<br>4<code>.</code>Comment</p>
+<h5 id="遍历子文档树"><a href="#遍历子文档树" class="headerlink" title="遍历子文档树"></a>遍历子文档树</h5><p>null</p>
+<h5 id="搜索文档树"><a href="#搜索文档树" class="headerlink" title="搜索文档树"></a>搜索文档树</h5><p>null</p>
+<h5 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h5><p>null</p>
+<h4 id="lxml的XPath解析"><a href="#lxml的XPath解析" class="headerlink" title="lxml的XPath解析"></a>lxml的XPath解析</h4><h2 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h2><h3 id="hTML正文抽取"><a href="#hTML正文抽取" class="headerlink" title="hTML正文抽取"></a>hTML正文抽取</h3><h4 id="存储为JSON"><a href="#存储为JSON" class="headerlink" title="存储为JSON"></a>存储为JSON</h4><p>见daomu.py</p>
+<h4 id="存储为CSV"><a href="#存储为CSV" class="headerlink" title="存储为CSV"></a>存储为CSV</h4><p>见daomu1.py</p>
+<h3 id="多媒体文件抽取"><a href="#多媒体文件抽取" class="headerlink" title="多媒体文件抽取"></a>多媒体文件抽取</h3><p>见duomeiti.py</p>
+<h3 id="Email提醒"><a href="#Email提醒" class="headerlink" title="Email提醒"></a>Email提醒</h3><p>见Email.py</p>
+<h2 id="实战项目：基础爬虫"><a href="#实战项目：基础爬虫" class="headerlink" title="实战项目：基础爬虫"></a>实战项目：基础爬虫</h2><h3 id="基础爬虫架构及运行原理"><a href="#基础爬虫架构及运行原理" class="headerlink" title="基础爬虫架构及运行原理"></a>基础爬虫架构及运行原理</h3><p><code>基础爬虫</code>:功能简单，仅考虑功能的实现，未涉及优化和稳健性的考虑。<br><code>基础爬虫框架</code>:主要包括五大模块，分别为爬虫调度器、URL管理器、HTML下载器、HTML解析器、数据存储器。<br><img src="http://image.3001.net/images/20180114/15159221317662.png" alt=""><br><img src="http://image.3001.net/images/20180114/15159222677900.png" alt=""></p>
+<h3 id="URL管理器"><a href="#URL管理器" class="headerlink" title="URL管理器"></a>URL管理器</h3><p>主要包括两个变量:一个是已爬取URL的集合，另一个是未爬取URL的集合。python<code>set</code>类型，主要是使用set的去重功能，防止链接重复爬取，因为爬取链接重复时容易造成死循环。<br>解决方案大概有三种:<br>1<code>.</code>内存去重<br>2<code>.</code>关系数据库去重<br>3<code>.</code>缓存数据库去重<br>爬取数量较大时，缓存数据库去重，爬取数量较小时采用内存去重<br><img src="http://image.3001.net/images/20180114/15159232673718.png" alt=""><br>代码见：URLManager.py</p>
+<h3 id="HTML下载器"><a href="#HTML下载器" class="headerlink" title="HTML下载器"></a>HTML下载器</h3><p>见HTMLDownload.py</p>
+<h3 id="HTML解析器"><a href="#HTML解析器" class="headerlink" title="HTML解析器"></a>HTML解析器</h3><p>见HtmlParser.py</p>
+<h3 id="数据存储器"><a href="#数据存储器" class="headerlink" title="数据存储器"></a>数据存储器</h3><p>见DataOutput.py</p>
+<h3 id="爬虫调度器"><a href="#爬虫调度器" class="headerlink" title="爬虫调度器"></a>爬虫调度器</h3><p>见SpiderMan.py<br>所有文件在firstSpider文件下</p>
+<h2 id="简单分布式爬虫"><a href="#简单分布式爬虫" class="headerlink" title="简单分布式爬虫"></a>简单分布式爬虫</h2><h3 id="简单分布式爬虫结构"><a href="#简单分布式爬虫结构" class="headerlink" title="简单分布式爬虫结构"></a>简单分布式爬虫结构</h3><p><img src="http://image.3001.net/images/20180115/15159873437058.png" alt=""><br><img src="http://image.3001.net/images/20180115/15159875246801.png" alt=""></p>
+<h2 id="数据库存储"><a href="#数据库存储" class="headerlink" title="数据库存储"></a>数据库存储</h2><p>讲解了python对SQLite、MySQL、MongoDB的操作</p>
+<h2 id="动态网站抓取"><a href="#动态网站抓取" class="headerlink" title="动态网站抓取"></a>动态网站抓取</h2><h3 id="Ajax和动态html"><a href="#Ajax和动态html" class="headerlink" title="Ajax和动态html"></a>Ajax和动态html</h3><p>了解Ajax和动态html的定义和原理</p>
+<h3 id="动态爬虫1：爬取影评信息"><a href="#动态爬虫1：爬取影评信息" class="headerlink" title="动态爬虫1：爬取影评信息"></a>动态爬虫1：爬取影评信息</h3><p>略</p>
+<h3 id="PhantomJS"><a href="#PhantomJS" class="headerlink" title="PhantomJS"></a>PhantomJS</h3><p>PhantomJS是一个基于Webkit的服务器端JavaScript API.它支持web而无需浏览器支持，不仅运行快，原生支持各种标准:DOM处理、CSS选择器、JSON、Canvas，和SVG。</p>
+<h3 id="Selenium"><a href="#Selenium" class="headerlink" title="Selenium"></a>Selenium</h3><p>Selenium是一个自动化测试工具，支持各种浏览器，包括Chrome、Safari、Firebox等</p>
+<h3 id="爬取去哪网"><a href="#爬取去哪网" class="headerlink" title="爬取去哪网"></a>爬取去哪网</h3><p>略</p>
+<h2 id="web端协议分析"><a href="#web端协议分析" class="headerlink" title="web端协议分析"></a>web端协议分析</h2><p>10.1 网页登录POST分析<br>登录之后才能进行页面爬取的情况，属于深层次的网页爬取</p>
+<h3 id="隐藏表单分析"><a href="#隐藏表单分析" class="headerlink" title="隐藏表单分析"></a>隐藏表单分析</h3><h3 id="加密数据分析"><a href="#加密数据分析" class="headerlink" title="加密数据分析"></a>加密数据分析</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Other/" rel="tag"># Other</a>
+          
+            <a href="/tags/PWBIn/" rel="tag"># PWBIn</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/30/CTFinfo/" rel="next" title="CTF新手指南">
+                <i class="fa fa-chevron-left"></i> CTF新手指南
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/PWN.jpg"
+                alt="PWBIn" />
+            
+              <p class="site-author-name" itemprop="name">PWBIn</p>
+              <p class="site-description motion-element" itemprop="description">探索未知的01世界</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/BInary/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/sky-03" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.sqlsec.com/" title="国光" target="_blank">国光</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python爬虫开发与项目实站"><span class="nav-number">1.</span> <span class="nav-text">python爬虫开发与项目实站</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#回顾python编程"><span class="nav-number">1.1.</span> <span class="nav-text">回顾python编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IO编程"><span class="nav-number">1.1.1.</span> <span class="nav-text">IO编程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文件读写"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">文件读写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作文件和目录"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">操作文件和目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#序列化操作"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">序列化操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进程和线程"><span class="nav-number">1.1.2.</span> <span class="nav-text">进程和线程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#多进程"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">多进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多线程"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#用threading模块创建多线程"><span class="nav-number">1.1.2.2.1.</span> <span class="nav-text">用threading模块创建多线程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#线程同步"><span class="nav-number">1.1.2.2.2.</span> <span class="nav-text">线程同步</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#全局解释器锁-GIL"><span class="nav-number">1.1.2.2.3.</span> <span class="nav-text">全局解释器锁(GIL)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#协程"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">协程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布式进程"><span class="nav-number">1.1.2.4.</span> <span class="nav-text">分布式进程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络编程"><span class="nav-number">1.1.3.</span> <span class="nav-text">网络编程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP编程"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">TCP编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UDP编程"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">UDP编程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WEB前端基础"><span class="nav-number">1.2.</span> <span class="nav-text">WEB前端基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初识网络爬虫"><span class="nav-number">1.3.</span> <span class="nav-text">初识网络爬虫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫概述"><span class="nav-number">1.3.1.</span> <span class="nav-text">爬虫概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP请求的python实现"><span class="nav-number">1.3.2.</span> <span class="nav-text">HTTP请求的python实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#urllib2-urllib-实现"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">urllib2/urllib 实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#httplib-urllib-实现"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">httplib/urllib 实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更人性化的requests"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">更人性化的requests</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一个完整的请求与响应模板"><span class="nav-number">1.3.2.3.1.</span> <span class="nav-text">一个完整的请求与响应模板</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#响应与编码"><span class="nav-number">1.3.2.3.2.</span> <span class="nav-text">响应与编码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#请求头的处理"><span class="nav-number">1.3.2.3.3.</span> <span class="nav-text">请求头的处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#响应码code和响应头headers处理"><span class="nav-number">1.3.2.3.4.</span> <span class="nav-text">响应码code和响应头headers处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Cookie-处理"><span class="nav-number">1.3.2.3.5.</span> <span class="nav-text">Cookie 处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#重定向与历史消息"><span class="nav-number">1.3.2.3.6.</span> <span class="nav-text">重定向与历史消息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#超时设置"><span class="nav-number">1.3.2.3.7.</span> <span class="nav-text">超时设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代理设置"><span class="nav-number">1.3.2.3.8.</span> <span class="nav-text">代理设置</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML解析大法"><span class="nav-number">1.4.</span> <span class="nav-text">HTML解析大法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初识Firebug"><span class="nav-number">1.4.1.</span> <span class="nav-text">初识Firebug</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RE正则"><span class="nav-number">1.4.2.</span> <span class="nav-text">RE正则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本语法的使用"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">基本语法的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#入门小例子"><span class="nav-number">1.4.2.1.1.</span> <span class="nav-text">入门小例子</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#常用元字符"><span class="nav-number">1.4.2.1.2.</span> <span class="nav-text">常用元字符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#字符转义"><span class="nav-number">1.4.2.1.3.</span> <span class="nav-text">字符转义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#重复"><span class="nav-number">1.4.2.1.4.</span> <span class="nav-text">重复</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#字符集合"><span class="nav-number">1.4.2.1.5.</span> <span class="nav-text">字符集合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分支条件"><span class="nav-number">1.4.2.1.6.</span> <span class="nav-text">分支条件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分组"><span class="nav-number">1.4.2.1.7.</span> <span class="nav-text">分组</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#反义"><span class="nav-number">1.4.2.1.8.</span> <span class="nav-text">反义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#后向引向"><span class="nav-number">1.4.2.1.9.</span> <span class="nav-text">后向引向</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#零宽断言"><span class="nav-number">1.4.2.1.10.</span> <span class="nav-text">零宽断言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注释"><span class="nav-number">1.4.2.1.11.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#贪婪与懒惰"><span class="nav-number">1.4.2.1.12.</span> <span class="nav-text">贪婪与懒惰</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#处理选项"><span class="nav-number">1.4.2.1.13.</span> <span class="nav-text">处理选项</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python与正则"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">python与正则</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#re-match-pattern-string-flags"><span class="nav-number">1.4.2.2.1.</span> <span class="nav-text">re.match(pattern,string[,flags])</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#re-search-pattern-string-flags"><span class="nav-number">1.4.2.2.2.</span> <span class="nav-text">re.search(pattern,string[,flags])</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#re-split-pattern-string-maxsplit"><span class="nav-number">1.4.2.2.3.</span> <span class="nav-text">re.split(pattern,string[,maxsplit])</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#re-findall-pattern-string-flags"><span class="nav-number">1.4.2.2.4.</span> <span class="nav-text">re.findall(pattern,string[,flags])</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#re-finditer-pattern-string-flags"><span class="nav-number">1.4.2.2.5.</span> <span class="nav-text">re.finditer(pattern,string[,flags])</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#re-sub-pattern-repl-string-count"><span class="nav-number">1.4.2.2.6.</span> <span class="nav-text">re.sub(pattern,repl,string[,count])</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#re-subn-pattern-repl-string-count"><span class="nav-number">1.4.2.2.7.</span> <span class="nav-text">re.subn(pattern,repl,string[,count])</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强大的Beautiful-Soup"><span class="nav-number">1.4.3.</span> <span class="nav-text">强大的Beautiful Soup</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解析器比较"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">解析器比较</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Beautiful-Soup的使用"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">Beautiful Soup的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#快速开始"><span class="nav-number">1.4.3.2.1.</span> <span class="nav-text">快速开始</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#对象种类"><span class="nav-number">1.4.3.2.2.</span> <span class="nav-text">对象种类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#遍历子文档树"><span class="nav-number">1.4.3.2.3.</span> <span class="nav-text">遍历子文档树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#搜索文档树"><span class="nav-number">1.4.3.2.4.</span> <span class="nav-text">搜索文档树</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#CSS选择器"><span class="nav-number">1.4.3.2.5.</span> <span class="nav-text">CSS选择器</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lxml的XPath解析"><span class="nav-number">1.4.3.3.</span> <span class="nav-text">lxml的XPath解析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据存储"><span class="nav-number">1.5.</span> <span class="nav-text">数据存储</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hTML正文抽取"><span class="nav-number">1.5.1.</span> <span class="nav-text">hTML正文抽取</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存储为JSON"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">存储为JSON</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#存储为CSV"><span class="nav-number">1.5.1.2.</span> <span class="nav-text">存储为CSV</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多媒体文件抽取"><span class="nav-number">1.5.2.</span> <span class="nav-text">多媒体文件抽取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Email提醒"><span class="nav-number">1.5.3.</span> <span class="nav-text">Email提醒</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实战项目：基础爬虫"><span class="nav-number">1.6.</span> <span class="nav-text">实战项目：基础爬虫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础爬虫架构及运行原理"><span class="nav-number">1.6.1.</span> <span class="nav-text">基础爬虫架构及运行原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URL管理器"><span class="nav-number">1.6.2.</span> <span class="nav-text">URL管理器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML下载器"><span class="nav-number">1.6.3.</span> <span class="nav-text">HTML下载器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML解析器"><span class="nav-number">1.6.4.</span> <span class="nav-text">HTML解析器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据存储器"><span class="nav-number">1.6.5.</span> <span class="nav-text">数据存储器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫调度器"><span class="nav-number">1.6.6.</span> <span class="nav-text">爬虫调度器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单分布式爬虫"><span class="nav-number">1.7.</span> <span class="nav-text">简单分布式爬虫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简单分布式爬虫结构"><span class="nav-number">1.7.1.</span> <span class="nav-text">简单分布式爬虫结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库存储"><span class="nav-number">1.8.</span> <span class="nav-text">数据库存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态网站抓取"><span class="nav-number">1.9.</span> <span class="nav-text">动态网站抓取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ajax和动态html"><span class="nav-number">1.9.1.</span> <span class="nav-text">Ajax和动态html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态爬虫1：爬取影评信息"><span class="nav-number">1.9.2.</span> <span class="nav-text">动态爬虫1：爬取影评信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PhantomJS"><span class="nav-number">1.9.3.</span> <span class="nav-text">PhantomJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Selenium"><span class="nav-number">1.9.4.</span> <span class="nav-text">Selenium</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#爬取去哪网"><span class="nav-number">1.9.5.</span> <span class="nav-text">爬取去哪网</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web端协议分析"><span class="nav-number">1.10.</span> <span class="nav-text">web端协议分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏表单分析"><span class="nav-number">1.10.1.</span> <span class="nav-text">隐藏表单分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加密数据分析"><span class="nav-number">1.10.2.</span> <span class="nav-text">加密数据分析</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">PWBIn</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">访客数</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye">阅读数</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
